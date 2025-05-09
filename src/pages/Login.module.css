@@ -1,0 +1,44 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.field-label {
+    width: 80px;
+    margin: 0;
+}
+
+.field-input {
+    width: 200px;
+}
+
+.button {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+}
+
+.error-message {
+    color: red;
+}
