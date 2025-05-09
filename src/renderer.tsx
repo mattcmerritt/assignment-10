@@ -28,24 +28,26 @@
 
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import MainLayout from './components/MainLayout'
 import List from './pages/List';
 import Entry from './pages/Entry';
+import ScrollToTop from './utils/ScrollToTop';
 
 console.log('👋 This message is being logged by "renderer.ts", included via Vite');
 
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <BrowserRouter>
+        <HashRouter>
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<List/>}></Route>
                     <Route path="/entry/:id" element={<Entry/>}></Route>
                 </Route> 
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </StrictMode>
-)
+);
