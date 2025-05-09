@@ -26,3 +26,9 @@ export async function addNewEntry(token : string, content : string) : Promise<vo
     const response = await axios.post(`${BACKEND_URL}/entry`, { content }, { headers: { token } });
     return;
 }
+
+// update entry
+export async function updateEntryCompletion(token : string, id : number, completed : boolean) : Promise<void> {
+    const response = await axios.post(`${BACKEND_URL}/entry/${id}`, { completed }, { headers: { token } });
+    return;
+}
