@@ -35,6 +35,7 @@ import List from './pages/List';
 import Entry from './pages/Entry';
 import Login from './pages/Login';
 import ScrollToTop from './utils/ScrollToTop';
+import Add from './pages/Add';
 
 console.log('👋 This message is being logged by "renderer.ts", included via Vite');
 
@@ -47,7 +48,7 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<List/>}></Route>
                     <Route path="/login" element={<Login/>}></Route>
-                    <Route path="/entry/:id" element={<Entry/>}></Route>
+                    <Route path="/add" element={<Add/>}></Route>
                 </Route> 
             </Routes>
         </HashRouter>
