@@ -32,7 +32,6 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import MainLayout from './components/MainLayout'
 import List from './pages/List';
-import Entry from './pages/Entry';
 import Login from './pages/Login';
 import ScrollToTop from './utils/ScrollToTop';
 import Add from './pages/Add';
