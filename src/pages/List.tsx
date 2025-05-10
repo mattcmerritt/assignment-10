@@ -56,10 +56,11 @@ export default function List() {
 
     return (
         <div className={styles['main-container']}>
-            <h1>TODO Items:</h1>
-            { items.length === 0 && <p id='nothing-label'>No items to complete.</p>}
+            <div className={styles['header-row']}>
+                <h1>TODO Items:</h1>
+                <button className={styles['add-button']} onClick={() => navigate('/add')}>+ Add New Task</button>
+            </div>
             { generateTodoEntryItems() }
-            <button className={styles['add-button']} onClick={() => navigate('/add')}>+ Add New Task</button>
         </div>
     );
 }

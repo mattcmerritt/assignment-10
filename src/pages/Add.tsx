@@ -45,10 +45,10 @@ export default function Add() {
     return (
         <div className={styles['main-container']}>
             <h1>Add New Task:</h1>
-            <form onSubmit={submitForm}>
+            <form className={styles['form-container']} onSubmit={submitForm}>
                 <div className={styles['field-container']}>
                     <p className={styles['field-label']}>Task Description:</p>
-                    <textarea value={content} className={styles['field-area']} onChange={(e) => { setContent(e.target.value) }} />
+                    <input type="text" value={content} className={styles['field-area']} onChange={(e) => { setContent(e.target.value) }} />
                 </div>
                 <button className={styles['button']} type='submit'>Submit</button>
                 <p className={styles['error-message']}>{errorMessage}</p>

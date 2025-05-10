@@ -45,8 +45,8 @@ export default function Login() {
 
     return (
         <div className={styles['main-container']}>
-            <h1>Login:</h1>
-            <form onSubmit={submitForm}>
+            <h1>Login</h1>
+            <form className={styles['form-container']} onSubmit={submitForm}>
                 <div className={styles['field-container']}>
                     <p className={styles['field-label']}>Username:</p>
                     <input type="text" value={username} className={styles['field-input']} onChange={(e) => { setUsername(e.target.value) }} />

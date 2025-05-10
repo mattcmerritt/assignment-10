@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     align-items: center;
-    background-color: darkslategray;
+    background-color: rgb(12, 13, 14);
     height: 30px;
     justify-content: space-between;
     gap: 10px;
@@ -11,14 +11,16 @@
     padding-bottom: 10px;
 }
 
-button {
-    background-color: darkslategray;
+.button {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    background-color: rgb(12, 13, 14);
     color: white;
     border: none;
     text-decoration: none;
+    font-size: 12pt;
 }
 
-button:hover {
+.button:hover {
     cursor: pointer;
 }
 

@@ -62,8 +62,8 @@ export default function NavBar() {
 
     return (
         <div className={styles['navbar']}>
-            <button className={styles['icon']} onClick={returnToHome}>📝</button>
-            { user !== null && <button className={styles['text-button']} onClick={logout}>Logout</button> }
+            <button className={`${styles['button']} ${styles['icon']}`} onClick={returnToHome}>Task Tracker 📝</button>
+            { user !== null && <button className={`${styles['button']} ${styles['text-button']}`} onClick={logout}>Logout</button> }
         </div>
     );
 }
